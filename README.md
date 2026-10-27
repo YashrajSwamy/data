@@ -11,7 +11,7 @@ https://api.buddy4study.com/api/v1.0
 |---|---|---|
 | POST | `/uaa/oauth/token` | Obtain access token |
 | POST | `/ssms/scholarship/` | Fetch scholarship listings |
-| POST | `/api/scholarships` | Project endpoint for scholarship data |
+| GET | `/api/scholarships/buddy4study` | Project endpoint for scholarship data |
 
 **Data collected:** Scholarship name, eligibility, benefits, amount, deadline, application link, and required documents where available.
 
@@ -21,7 +21,7 @@ https://api.buddy4study.com/api/v1.0
 
 | Method | Project Endpoint | Purpose |
 |---|---|---|
-| GET | `/api/vidyasaarathi` | Extract published scholarship data |
+| GET | `/api/scholarships/vidyasaarathi` | Extract published scholarship data |
 
 **Data collected:** Scholarship details, application dates, and other available fields. Published schemes are filtered by status and dates.
 
@@ -31,7 +31,7 @@ https://api.buddy4study.com/api/v1.0
 
 | Method | Project Endpoint | Purpose |
 |---|---|---|
-| GET | `/api/nsp` | Scrape scholarship listings and linked PDFs |
+| GET | `/api/scholarships/nsp` | Scrape scholarship listings and linked PDFs |
 
 **Data collected:** Scholarship name, logo, application dates, eligibility, scholarship amount, selection criteria, and required documents where available.
 
@@ -39,8 +39,8 @@ https://api.buddy4study.com/api/v1.0
 
 | Source | Method | Endpoint |
 |---|---|---|
-| Buddy4Study | POST | `/api/scholarships` |
-| Vidyasaarathi | GET | `/api/vidyasaarathi` |
-| NSP | GET | `/api/nsp` |
+| Buddy4Study | POST | `/api/scholarships/buddy4study` |
+| Vidyasaarathi | GET | `/api/scholarships/vidyasaarathi` |
+| NSP | GET | `/api/scholarships/nsp` |
 
 **Technologies:** Node.js, Express, Cheerio, and `pdf-parse`.
