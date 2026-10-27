@@ -1,0 +1,13 @@
+Anony Token: https://api.buddy4study.com/api/v1.0/uaa/oauth/token
+
+Featured: 
+https://api.buddy4study.com/api/v1.0/ssms/scholarship?featured=true
+
+
+Filtered( Graduation, India, Engineering ):
+https://api.buddy4study.com/api/v1.0/ssms/scholarship/
+payload: {"page":0,"length":100,"rules":[{"rule":[22]},{"rule":[260,282,254,288]},{"rule":[820]}],"mode":"OPEN","sortOrder":"DEADLINE"}
+
+Scholarship Data
+
+https://api.buddy4study.com/api/v1.0/ssms/scholarship-detail/{slug}
